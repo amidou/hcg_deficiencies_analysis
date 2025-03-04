@@ -1,0 +1,66 @@
+HCG 16:
+    distance    : 49.0
+    velocity    : 3977.0
+    n_members   : 5
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg16/'
+    moment_0    : 'hcg16_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg16_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg16_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg16_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg16_line60_masked.pb_corr_vopt_cat.txt'
+
+HCG 30:
+    distance    : 61.0
+    velocity    : 4645.0
+    n_members   : 4
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg30/'
+    moment_0    : 'hcg30_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg30_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg30_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg30_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg30_line60_masked.pb_corr_vopt_cat.txt'
+
+HCG 31:
+    distance    : 53.0
+    velocity    : 4068.0
+    n_members   : 5
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg31/'
+    moment_0    : 'hcg31_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg31_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg31_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg31_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg31_line60_masked.pb_corr_vopt_cat.txt'
+
+HCG 90:
+    distance    : 33.0
+    velocity    : 2635.0
+    n_members   : 4
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg90/'
+    moment_0    : 'hcg90_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg90_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg90_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg90_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg90_line60_masked.pb_corr_vopt_cat.txt'
+
+HCG 91:
+    distance    : 92.0
+    diameter    : 10.38
+    velocity    : 7195.0
+    n_members   : 4
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg91/'
+    moment_0    : 'hcg91_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg91_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg91_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg91_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg91_line60_masked.pb_corr_vopt_cat.txt'
+
+HCG 97:
+    distance    : 85.0
+    velocity    : 6579.0
+    n_members   : 5
+    rootdir     : '/mnt/scratch/ianja/hcg-pipeline/hcg-meerkat/results/sofia_pbc/hcg97/'
+    moment_0    : 'hcg97_line60_masked.pb_corr_vopt_mom0.fits'
+    moment_1    : 'hcg97_line60_masked.pb_corr_vopt_mom1.fits'
+    noise_cube  : 'hcg97_line60_masked.pb_corr_vopt_noise.fits'
+    dir_cubelets: 'hcg97_line60_masked.pb_corr_vopt_cubelets'
+    catalog     : 'hcg97_line60_masked.pb_corr_vopt_cat.txt'

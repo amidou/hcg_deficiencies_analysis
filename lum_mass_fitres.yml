@@ -1,0 +1,19 @@
+early:
+  a: 1.00
+  b: -0.80
+  sigma: 0.57
+
+late:
+  a: 0.83
+  b: 1.10
+  sigma: 0.38
+
+irregular:
+  a: 0.81
+  b: 1.45
+  sigma: 0.30
+
+total:
+  a: 0.77
+  b: 1.68
+  sigma: 0.42

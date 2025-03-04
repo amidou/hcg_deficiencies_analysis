@@ -1,0 +1,48 @@
+,HCG,Name,RA,Dec,Vsys,M_type,T_type,sep_kpc,sep_norm,e_sepnorm,D25_am,D25_kpc,flux,logMHIobs,e_logMHIobs,logMHIexp,e_logMHIexp,defHI,e_defHI,OPT_HI,zflag,HIflag,MHIlim_flag,gmag,e_gmag,rmag,e_rmag,Btot,logLB,logMs,e_logMs
+0,91,WISEA J220943.70-273554.8,332.432250,-27.598920,7072.0,S0,-2,372.256,1.121,0.16643329573147417,0.115,3.083,0.061,8.088,0.061,9.235,0.221,1.147,0.22937574836985772,2,1,1,0,18.740,0.062,18.106,0.045,18.513,8.475,8.935,0.094
+1,91,ESO 467- G 016,332.459250,-27.535610,7372.0,Sa,1,479.041,1.443,0.21417595049862317,0.268,7.172,2.126,9.628,0.061,9.296,0.57,-0.332,0.573299427821302,2,1,1,0,14.861,0.003,14.229,0.002,14.633,10.026,10.515,0.011
+2,91,ESO 467- G 014,332.309430,-27.403220,7112.5,SBc,5,627.332,1.889,0.28047603152975664,0.360,9.625,3.031,9.782,0.061,9.001,0.38,-0.781,0.38493146654986815,2,1,1,0,15.897,0.008,15.669,0.009,15.512,9.675,9.339,0.018
+3,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+4,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+5,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+6,91,ESO 467- G 003,331.560830,-27.958390,6975.0,SBbc,4,1068.219,3.217,0.4775935795421068,nan,nan,4.270,9.931,0.061,nan,0.221,nan,0.22937574836985772,2,1,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+7,91,ESO 467- G 005,331.641250,-27.991580,6868.5,Sb,3,973.991,2.933,0.4354645900489337,0.334,8.945,2.104,9.624,0.061,9.240,0.38,-0.384,0.38493146654986815,2,1,1,0,15.465,0.006,14.951,0.004,15.192,9.803,10.046,0.013
+8,91,ESO 532- G 023,332.404500,-27.246500,7235.0,SBbc,4,893.383,2.690,0.3994254164778153,0.345,9.228,3.126,9.795,0.061,9.331,0.38,-0.465,0.3849314665498682,2,1,1,0,15.192,0.006,14.678,0.005,14.918,9.912,10.206,0.013
+9,91,WISEA J221035.73-271456.0,332.648750,-27.248970,7180.0,S0,-2,1012.728,3.050,0.45278383090559854,0.128,3.437,0.202,8.605,0.061,8.361,0.57,-0.244,0.573299427821302,2,1,1,0,16.961,0.013,16.566,0.473,16.641,9.223,9.250,0.578
+10,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+11,91,WISEA J221040.40-274144.2,332.668250,-27.695730,6814.0,Sd,7,560.064,1.687,0.2504006127034137,0.133,3.557,0.590,9.071,0.061,9.055,0.285,-0.016,0.2915428509503059,1,0,1,0,18.351,0.028,17.944,0.020,18.036,8.665,8.718,0.043
+12,91,WISEA J220659.01-271620.4,331.746220,-27.271770,6931.0,Im,10,1140.728,3.435,0.5100116965934042,nan,nan,0.517,9.014,0.061,nan,0.221,nan,0.22937574836985772,1,0,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+13,91,WISEA J220836.49-281651.5,332.152140,-28.280910,6966.0,Im,10,806.594,2.429,0.360622745190736,nan,nan,0.448,8.952,0.061,nan,0.221,nan,0.22937574836985772,1,0,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+14,91,WISEA J220813.38-272252.5,332.055770,-27.381640,7265.0,S0,-2,740.596,2.230,0.33111538314734706,nan,nan,0.165,8.518,0.061,nan,0.221,nan,0.22937574836985772,1,0,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+15,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+16,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+17,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+18,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+19,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+20,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+21,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+22,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+23,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+24,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+25,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+26,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+27,91,all: ESO 467- G 017,332.670210,-27.896310,NaN,NaN,NaN,564.546,1.700,0.2524046377547893,nan,nan,8.146,10.211,0.061,9.340,0.49093838717297306,-0.872,0.4947653321931846,2,1,1,0,nan,nan,nan,nan,nan,nan,10.504,nan
+28,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+29,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+30,91,all: MRSS 467-117967,332.967420,-27.956530,NaN,NaN,NaN,996.574,3.001,0.4455614536868644,nan,nan,4.176,9.921,0.061,nan,0.3606466414650218,nan,0.36583908202956156,2,1,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+31,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+32,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+33,91,all: WISEA J220839.75-281703.5,332.165660,-28.284320,NaN,NaN,NaN,807.512,2.432,0.36103303467195885,nan,nan,0.448,8.952,0.061,nan,0.312541197284454,nan,0.31851881253739517,2,1,1,0,nan,nan,nan,nan,nan,nan,nan,nan
+34,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+35,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+36,91,core: HCG 91A,332.282000,-27.809470,6832.0,SBc,5,27.978,0.084,0.012508878371097017,0.606,16.230,3.349,9.825,0.061,9.992,0.38,0.166,0.38493146654986815,2,1,1,0,13.295,0.001,12.687,0.001,13.058,10.656,11.161,0.010
+37,91,core: HCG 91B,332.317790,-27.730330,7267.0,Sc,5,108.914,0.328,0.04869492271365505,0.397,10.616,0.850,9.230,0.061,9.462,0.38,0.232,0.3849314665498682,2,1,1,0,15.007,0.003,14.283,0.002,14.816,9.953,10.597,0.011
+38,91,core: HCG 91C,332.308380,-27.782190,7285.0,Sc,5,31.886,0.096,0.01425607063438939,0.333,8.924,2.159,9.635,0.061,9.339,0.38,-0.296,0.38493146654986815,2,1,1,0,15.162,0.005,14.654,0.003,14.886,9.925,10.258,0.013
+39,91,core: HCG 91D,332.285000,-27.800440,7195.0,SB0,NaN,13.139,0.040,0.005874378397785393,0.555,14.844,0.035,7.848,0.061,9.783,0.3,1.935,0.3062225235678007,2,1,0,1,14.444,0.004,13.749,0.002,14.241,10.183,10.756,0.011
+40,91,core: total,332.289952,-27.793529,7195.0,NaN,NaN,0.000,0.000,0.0,nan,nan,9.637,10.284,0.061,10.321,0.723325652801005,0.037,0.7259285322538523,2,1,1,0,nan,nan,nan,nan,nan,nan,11.414,nan
+41,91,WISEA J220913.03-273402.8,332.304330,-27.567470,6990.5,E,-5,363.558,1.095,0.1625444828923239,0.219,5.860,0.039,7.894,0.061,9.069,0.57,1.174,0.573299427821302,0,1,0,1,15.526,0.005,14.798,0.003,15.336,9.745,10.435,0.013
+42,91,WISEA J220938.70-273316.5,332.411540,-27.555060,7435.0,E,-5,420.136,1.265,0.18783985827069105,0.060,1.600,0.041,7.909,0.061,8.735,0.285,0.825,0.2915428509503059,0,1,0,1,18.865,0.042,18.510,0.030,18.530,8.468,8.398,0.064
+43,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan
+44,91,WISEA J220727.04-275534.3,331.862670,-27.926360,6923.0,S0,-2,642.972,1.936,0.28746829776417543,nan,nan,0.054,8.036,0.061,nan,0.221,nan,0.22937574836985772,0,1,0,1,nan,nan,nan,nan,nan,nan,nan,nan
+45,91,WISEA J221011.26-281122.4,332.546920,-28.189530,7016.0,S0,-2,732.847,2.207,0.327650839419807,0.225,6.023,0.062,8.090,0.061,9.086,0.57,0.996,0.573299427821302,0,1,0,1,15.463,0.004,14.754,0.002,15.265,9.774,10.367,0.012
+46,NaN,NaN,nan,nan,NaN,NaN,NaN,nan,nan,NaN,nan,nan,nan,nan,nan,nan,NaN,nan,NaN,NaN,NaN,NaN,NaN,nan,nan,nan,nan,nan,nan,nan,nan

@@ -1,0 +1,57 @@
+-7 : 
+    - dSph
+-5 : 
+    - E
+    - E0
+    - E1
+    - E2
+-3 : 
+    - S0-
+    - SO-
+-2 : 
+    - E-SO
+    - E-S0
+    - SO0
+    - S00
+    - S0O
+    - S0
+    - SO
+-1 : 
+    - SO+
+    - S0+
+0 : 
+    - SO-a
+    - S0-a
+    - SOa
+    - S0a
+1 :
+    - Sa
+    - SBa
+2 :
+    - Sab
+    - SBab
+3 :
+    - Sb
+    - SBb
+4 :
+    - Sbc
+    - SBbc
+5 :
+    - Sc
+    - SBc
+6 :
+    - Scd
+    - SBcd
+7 :
+    - Sd
+    - SBd
+8 :
+    - Sdm
+    - SBdm
+9 :
+    - Sm
+    - SBm
+10 :
+    - Ir
+    - Irr
+    - Im
