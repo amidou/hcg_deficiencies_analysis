@@ -340,7 +340,7 @@ def query_SDSS_magnitude(ra, dec, mag_type='auto'):
     else:
         return None
 
-def get_splus_phot(g, radius_deg=2, user='asorgho', passwd='11sz0795'):
+def get_splus_phot(g, radius_deg=2, user='', passwd=''):
     '''
     Query the S-PLUS photometries for all galaxies around a given group.
     Parameters
