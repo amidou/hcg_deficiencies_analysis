@@ -172,7 +172,7 @@ def make_cutout(fp, ra, dec, majax_am, minax_am, angle):
             cutout_data[k][mask] = np.nan
     return cutout_data, cutout_wcs, hdr
 
-def download_grz(g, size=1.5, ddir='/mnt/scratch/HCGs/legacy_images', bands='grz'):
+def download_grz(g, size=1.5, ddir='./legacy_images', bands='grz'):
     '''
     Download DECaLS images of an HCG.
     Parameters
@@ -486,7 +486,7 @@ def group_virial_mass(g, G=4.301e-9):
     center_radec = center_of_mass(g)
     center_coo = coords.SkyCoord(center_radec[0], center_radec[1], unit='deg', frame='icrs')
 
-    t = pd.read_csv('/mnt/scratch/HCGs/params_tables/HIdef_%s.csv' %g.replace(' ','').lower(), na_values='--')
+    t = pd.read_csv('./params_tables/HIdef_%s.csv' %g.replace(' ','').lower(), na_values='--')
     t.dropna(subset=['Name'], inplace=True)
     ra, dec, = t['RA'], t['Dec']
 
@@ -714,7 +714,7 @@ def rmag_to_mhi(rmag, dist, ttype, morph=True):
             morph = 'irregular'
     else:
         morph = 'total'
-    with open('/mnt/scratch/HCGs/lum_mass_fitres.yml') as lm_fitres:
+    with open('./lum_mass_fitres.yml') as lm_fitres:
         fitres = yaml.safe_load(lm_fitres)
     a, b, sigma = fitres[morph]['a'], fitres[morph]['b'], fitres[morph]['sigma']
 
@@ -977,7 +977,7 @@ def crop_hcg_fits(hcg, input_type='image'):
         f = image_files[hcg]
     elif input_type == 'mask':
         f = mask_files[hcg]
-    freg = f'/mnt/scratch/HCGs/separate_hi_discs/box_hcg{hcg}.reg'
+    freg = f'./separate_hi_discs/box_hcg{hcg}.reg'
     chans = chan_range[hcg]
     reg = Regions.read(freg, format='crtf')
     cube = SpectralCube.read(f)
@@ -991,7 +991,7 @@ def crop_hcg_fits(hcg, input_type='image'):
                                   ylo=ccoo.dec-0.5*height, yhi=ccoo.dec+0.5*height)
     sub_cube = sub_cube_radec.spectral_slab(int(min(chans))*u.km/u.s, int(max(chans))*u.km/u.s)
 
-    sub_cube.hdu.writeto(f'/mnt/scratch/HCGs/separate_hi_discs/hcg{hcg}_{append}cropped{suffix}_untested.fits', overwrite=True)
+    sub_cube.hdu.writeto(f'./separate_hi_discs/hcg{hcg}_{append}cropped{suffix}_untested.fits', overwrite=True)
     return sub_cube.hdu.data
 
 def calculate_individual_masses(hcg, show_plot=False):
@@ -1006,7 +1006,7 @@ def calculate_individual_masses(hcg, show_plot=False):
     warnings.filterwarnings(action='ignore', category=UserWarning)
     mydir = 'slicerastro_output/'
     colors = ['w', 'b', 'cyan', 'magenta', 'yellow']
-    with open('/mnt/scratch/HCGs/separate_hi_discs/ids_to_galnames.yml') as fp:
+    with open('./separate_hi_discs/ids_to_galnames.yml') as fp:
         ids_to_galnames = yaml.safe_load(fp)
     id_to_galname = ids_to_galnames[f'HCG {hcg}']
     opt_d, opt_h = fits.getdata(f'legacy_images/HCG{hcg}_grz.fits', header=True)
@@ -1014,13 +1014,13 @@ def calculate_individual_masses(hcg, show_plot=False):
         suffix = '_15as'
     else:
         suffix = ''    
-    cube = SpectralCube.read(f'/mnt/scratch/HCGs/separate_hi_discs/hcg{hcg}_cropped{suffix}.fits')
+    cube = SpectralCube.read(f'./separate_hi_discs/hcg{hcg}_cropped{suffix}.fits')
     cube_kms = cube.with_spectral_unit(u.km/u.s, velocity_convention='optical', rest_value=1420405752*u.Hz)
-    mask_array = fits.getdata(f'/mnt/scratch/HCGs/separate_hi_discs/slicerastro_output/hcg{hcg}_all{suffix}_mask.fits')
-    raw_mask_array = fits.getdata(f'/mnt/scratch/HCGs/separate_hi_discs/hcg{hcg}_mask_cropped{suffix}.fits')
+    mask_array = fits.getdata(f'./separate_hi_discs/slicerastro_output/hcg{hcg}_all{suffix}_mask.fits')
+    raw_mask_array = fits.getdata(f'./separate_hi_discs/hcg{hcg}_mask_cropped{suffix}.fits')
     if len(raw_mask_array.shape) > 3:
         raw_mask_array = raw_mask_array[0]
-    reg = Regions.read(f'/mnt/scratch/HCGs/separate_hi_discs/box_hcg{hcg}.reg', format='crtf')
+    reg = Regions.read(f'./separate_hi_discs/box_hcg{hcg}.reg', format='crtf')
     if len(reg) == 1:
         ccoo = reg[0].center
         width, height = reg[0].width, reg[0].height
@@ -1060,7 +1060,7 @@ def calculate_individual_masses(hcg, show_plot=False):
         masked_cube = cube_kms.with_mask(mask)
         m0 = masked_cube.moment(order=0)
         galname = id_to_galname[key].lower().replace(' ','')
-        m0.hdu.writeto(f'/mnt/scratch/HCGs/separate_hi_discs/hcg{hcg}_mom0_{galname}.fits', overwrite=True)
+        m0.hdu.writeto(f'./separate_hi_discs/hcg{hcg}_mom0_{galname}.fits', overwrite=True)
         m0_data = m0.hdu.data
         flux = totflux(m0_data, m0.hdu.header)
         mhi, e_mhi = himass(flux, dist)
@@ -1076,8 +1076,8 @@ def calculate_individual_masses(hcg, show_plot=False):
     if hcg == 31:
         ax.set_xlim((0.5*r.shape[1]-0.25*r.shape[1]), (0.5*r.shape[1]+0.25*r.shape[1]))
         ax.set_ylim((0.5*r.shape[0]-0.25*r.shape[0]), (0.5*r.shape[0]+0.25*r.shape[0]))
-    plt.savefig(f'/mnt/scratch/HCGs/maps_figures/hcg{hcg}_core_members{suffix}.pdf')
-    df.to_csv(f'/mnt/scratch/HCGs/individual_masses_hcg{hcg}.csv')
+    plt.savefig(f'./maps_figures/hcg{hcg}_core_members{suffix}.pdf')
+    df.to_csv(f'./individual_masses_hcg{hcg}.csv')
     if show_plot:
         plt.show()
     else:
@@ -1146,9 +1146,9 @@ def fit_lum_mass(split_morph=False):
     If split_morph = True, split the data by morphology before performing the fit.
     '''
     h=0.7
-    df_sga = pd.read_csv('/mnt/scratch/HCGs/SGA_AMIGA_GRZMAG.csv', index_col='cig')
-    dfj = pd.read_csv('/mnt/scratch/HCGs/J18_TableB2.csv', index_col='CIG')
-    dfm = pd.read_csv('/mnt/scratch/HCGs/CIG_MORPHOLOGY.csv', index_col='cig')
+    df_sga = pd.read_csv('./SGA_AMIGA_GRZMAG.csv', index_col='cig')
+    dfj = pd.read_csv('./J18_TableB2.csv', index_col='CIG')
+    dfm = pd.read_csv('./CIG_MORPHOLOGY.csv', index_col='cig')
     dfm_sub = dfm[['MORPH_TYPE', 'E_MORPH_TYPE', 'MORPH_LETTER_RC3']]
     df = pd.merge(df_sga, dfj, left_index=True, right_index=True, how='inner')
     df = pd.merge(df, dfm_sub, left_index=True, right_index=True, how='inner')
@@ -1197,7 +1197,7 @@ def fit_lum_mass(split_morph=False):
 
     return input_arrays, trace
 
-def plot_fit(arrays, trace, trace_total=None, figdir='/mnt/scratch/HCGs/hidef_figures/'):
+def plot_fit(arrays, trace, trace_total=None, figdir='./hidef_figures/'):
     '''
     Plot the Bayesian fit.
     arrays and trace are outputs of the function fit_lum_mass.
@@ -1272,7 +1272,7 @@ def plot_map(fig, g, gcoo, f_mom0, df, nsigma=0.5, cmap='gray_r', color=False):
               'nocounterparts': 'red',
               'noz': 'green',
               'core': 'orange'}
-    grz, opthdr = fits.getdata('/mnt/scratch/HCGs/legacy_images/%s_grz.fits' %g.replace(' ',''), header=True)
+    grz, opthdr = fits.getdata('./legacy_images/%s_grz.fits' %g.replace(' ',''), header=True)
     gband, rband, zband = grz
     
     optwcs = WCS(opthdr).celestial
@@ -1327,7 +1327,7 @@ def plot_map(fig, g, gcoo, f_mom0, df, nsigma=0.5, cmap='gray_r', color=False):
     ax.coords[0].set_major_formatter('hh:mm:ss'); ax.coords[1].set_major_formatter('dd:mm')
     ax.coords[0].set_ticklabel(exclude_overlapping=True); ax.coords[1].set_ticklabel(exclude_overlapping=True)    
 
-def inset_plot(g, nsigma=0.2, contrast=0.05, stretch_func='log', norm_a=1, mapdir='/mnt/scratch/HCGs/maps_figures/'):
+def inset_plot(g, nsigma=0.2, contrast=0.05, stretch_func='log', norm_a=1, mapdir='./maps_figures/'):
     '''
     Produces a plot of HI contours on an optical r-band image and shows detections in inset boxes overlaid on composite color images.
     Dependency files: group_members.yml; data_files.yml; detections_positions.yml
@@ -1345,7 +1345,7 @@ def inset_plot(g, nsigma=0.2, contrast=0.05, stretch_func='log', norm_a=1, mapdi
     with open('detections_positions.yml') as f:
         positions = yaml.safe_load(f)
     
-    grz, opthdr = fits.getdata('/mnt/scratch/HCGs/legacy_images/%s_grz.fits' %g.replace(' ',''), header=True)
+    grz, opthdr = fits.getdata('./legacy_images/%s_grz.fits' %g.replace(' ',''), header=True)
     
     nhi_3s_levels = {'HCG 16': 3.5,
                  'HCG 31': 3.3,
@@ -1623,8 +1623,8 @@ def plot_hi_star(glist, tabdir='./params_tables/', figdir='./hidef_figures/',sav
     logms_maddox = maddox['logMs']
     logmhi_maddox = maddox['logMHI']
     hicat = pd.read_csv('HICAT_table8.csv')
-    df_j18 = pd.read_csv('/mnt/scratch/HCGs/Jones18_Table2_HIderived.csv', index_col='CIG')
-    df_b20 = pd.read_csv('/mnt/scratch/HCGs/Bok2020_table.csv', index_col='cig')
+    df_j18 = pd.read_csv('./Jones18_Table2_HIderived.csv', index_col='CIG')
+    df_b20 = pd.read_csv('./Bok2020_table.csv', index_col='cig')
     df_cig = pd.merge(df_j18, df_b20, left_index=True, right_index=True, how='inner')
     
     mx = np.linspace(6,13,10)
@@ -1971,7 +1971,7 @@ def hcg_hi_content(g, dv=20., plot=False, color=False, mapdir='./maps_figures/',
                 logLB = Btot_to_lumB(Btot, group_dist)
                 # mhi_pred[i], _ = mj18_LB_to_mhi(logLB, ttype)
                 mhi_pred[i], e_mhi_pred[i] = predicted_mhi(rmag, gmag, group_dist, ttype, logms)
-                f_mom0 = '/mnt/scratch/HCGs/separate_hi_discs/%s_mom0_%s.fits' %(g.replace(' ','').lower(), core.replace(' ','').lower())
+                f_mom0 = './separate_hi_discs/%s_mom0_%s.fits' %(g.replace(' ','').lower(), core.replace(' ','').lower())
                 try:
                     core_data, core_hdr = fits.getdata(f_mom0, header=True)
                     core_flux = totflux(core_data, core_hdr)
